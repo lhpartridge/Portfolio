@@ -1,0 +1,466 @@
+:root {
+    --imageBg: #fefefe;
+    --bgColor: #e4e8ff;
+    --sectionColor: #d5dcff;
+    --figcaptionBgColor: #e1fff8;
+    --textColor:  #1b2231;
+    --bannerColor: #737687;
+    --pebbleColor: #f8f2c4;
+    --waterColor:  #a8ccc4;
+    --headerFont: 'Fredericka the Great', cursive;
+    --subheaderFont:'Julius Sans One', sans-serif;
+    --textFont: 'Gowun Batang', serif;
+}
+/*
+font-family: 'Antic Didone', serif;
+font-family: 'Benne', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Fanwood Text', serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'GFS Didot', serif;
+>font-family: 'Gowun Batang', serif;
+font-family: 'Gupter', serif;
+font-family: 'Hina Mincho', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Lusitana', serif;
+font-family: 'Nanum Myeongjo', serif;
+>font-family: 'PT Serif Caption', serif;
+font-family: 'Sorts Mill Goudy', serif;
+font-family: 'Source Serif Pro', serif;
+*/
+body {
+    /*background-image: url("../css/media/metallic_blue-4.PNG");*/
+    background-color: var(--imageBg);
+  
+    margin: 0;
+    padding: 0;
+}
+/*
+header
+{
+    background-image: url("media/dark_green_metallic_1.JPG");
+    background-image: url("../../dark_blue_metallic_1.jpg");
+    height: 100vh;
+}
+
+
+#1b2231
+
+737687
+
+.top-header-section {
+    background-image: url("../css/media/metallic_blue-4.PNG");
+    margin: 0;
+    height: 40px;
+}
+*/
+
+#title {
+    font-family:  var(--headerFont);
+}
+
+h3 {
+    color: var(--sectionColor);
+    font-size: 48px;
+}
+
+.main-header-section {
+    background-color: var(--bgColor);
+}
+
+.top-header-section {
+      background-color: #737687;
+}
+
+.top-header {
+    margin-top: 40px;
+    height: auto;
+    
+}
+
+
+.top-nav-section {
+    background-color: var(--waterColor);
+
+    
+}
+
+.top-nav-link, .footer-nav-link {
+    color: var(--textColor);
+    font-size: calc(8px + ( 14 - 8) * (100vw - 300px) / (800 - 300) ); 
+    font-family: var(--subheaderFont);
+    font-weight: 700;
+    background-color: var(--waterColor);
+}
+
+.top-nav-link:hover, .footer-nav-link:hover {
+    color: var(--pebbleColor);
+}
+
+.top {
+    font-family: var(--subheaderFont);
+    font-size: 32px;
+    color: var(--textColor);
+    font-weight: 700;
+}
+
+.top:hover {
+    color: var(--pebbleColor);
+    text-decoration: none;
+}
+
+.logo-section {
+    background-color: var(--bannerColor);
+    height: auto;
+}
+
+.logo-subheader {
+    font-family: var(--headerFont);
+    color: var(--sectionColor);
+    font-size:  64px;
+}
+
+.logo-subheader:hover {
+    color: #f4f1c0;
+}
+ .logo-text:hover {
+     color: #f4f1c0;
+ }
+
+
+ .logo {
+     position: relative;
+     height: 30vh;
+    
+ }
+
+#apologue {
+    position: absolute;
+    left: 10vw;
+    
+    opacity: 0%;
+    
+    animation-direction: normal;
+    animation-name: fadeOut;
+    animation-duration: 8s;
+    
+    animation-iteration-count: infinite;
+    
+}
+
+#apologicode {
+    position: absolute;
+    left: 10vw;
+    /*
+    opacity: 100%;
+    */
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-direction: normal;
+    
+    animation-iteration-count: infinite;
+    
+}
+
+
+.logo-text {
+    background-color: var(--bannerColor);
+    color: var(--bgColor);
+    font-family: var(--headerFont);
+    font-size: 24px;
+}
+
+#logo-text-1 {
+    position: absolute;
+    left: 0;
+    opacity: 0%;
+    animation-direction: normal;
+    animation-name: fadeOut;
+    animation-duration: 8s;
+    
+    animation-iteration-count: infinite;
+    
+}
+
+#logo-text-2 {
+    position: absolute;
+    left: 0;
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-direction: normal;
+    
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+.banner-section {
+    background: linear-gradient(to right, var(--bgColor), var(--imageBg));
+}
+
+.crow-image {
+    max-height: 40vh;
+    opacity: 60%;
+    box-shadow: 0 0 8px 8px var(--pebbleColor) inset;
+}
+
+.crow-image:before {
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0px 0px 8px 10px var(--imageBg);
+    -webkit-box-shadow:inset 0px 0px 8px 10px var(--imageBg);
+    box-shadow:inset 0px 0px 8px 10px var(--imageBg);
+}
+
+.about-section {
+    background: linear-gradient(to right, var(--bgColor), var(--imageBg));
+}
+
+#headshot {
+    max-height: 40vh;
+    border-radius: 20px;
+    padding:  10px;
+}
+
+.about-text, .interests-text, .contacts-text, .figcaption-text {
+    font-family: var(--textFont);
+    font-size: 20px;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: var(--headerFont);
+    color: var(--textColor);
+}
+
+h2 {
+    font-family: var(--subheaderFont);
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+banner {
+    height:  400px;
+    background-image: linear-gradient(to top right, #1b2231, #737687);
+    
+}
+*/
+section {
+    padding: 20px 0;
+    height: auto;
+}
+
+p {
+    font: 1em sans-serif;
+    color: #1b2231;
+    background-color: #e4e7f4;
+}
+
+.projects-section {
+    background-color: var(--bgColor);
+}
+
+
+
+.project-div, .project-link {
+    padding:  0px;
+}
+
+figure {
+    border: thin var(--bannerColor) solid;
+    padding: 10px;
+    max-width: 450px;
+    background-color: var(--figcaptionBgColor);
+}
+
+figcaption {
+    max-width: 500px;
+    padding: 0 10px;
+    border: 2px var(--bannerColor);
+    margin: 10px;
+}
+
+.project-image {
+    max-width: 450px;
+    padding: 10px;
+    
+}
+
+.figcaption-text {
+    background-color: var(--imageBg);
+
+}
+
+.certifications-section {
+    background-color: var(--imageBg);
+    padding-top: 20px;
+}
+
+.certifications-text {
+    font-family: var(--textFont);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+#web-design {
+    text-decoration: none;
+}
+
+#rwd:hover {
+    color: var(--waterColor);
+}
+
+.interests-section {
+    background-color: var(--pebbleColor);
+    padding-top: 20px;
+}
+
+.interests-text {
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.contacts-section {
+    background-color: var(--waterColor);
+    padding-top: 20px;
+}
+
+.contacts-text {
+    background-color: transparent;
+    font-size:  20px;
+    font-weight:  500;
+}
+
+.contacts-link {
+    margin: 0;
+    padding: 0;
+}
+
+.address {
+    font-family: var(--textFont);
+    font-size: 20px;
+    color: var(--textColor);
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+a .contacts-text:hover {
+    color: var(--pebbleColor);
+}
+
+#phone, #mail {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+footer {
+    background: linear-gradient(var(--waterColor), #737687);
+    height: 200px;
+}
+
+.footer-subheader {
+    font-size: 48px;
+    color: var(--textColor);
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav-link {
+    background-color: transparent;
+}
+
+.colophon-text {
+    background-color: transparent;
+    font-family: var(--textFont);
+    font-size: 24px;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.dedication {
+    background-color: #e4e7f4;
+}
+
+/*
+
+#s1 {
+    font-family: 'Antic Didone';
+}
+
+#s2 {
+    font-family: 'Benne';
+}
+
+#s3 {
+    font-family: 'Crimson Text';
+}
+#s4 {
+    font-family: 'Fanwood Text';
+}
+#s5 {
+    font-family: 'Fredericka the Great';
+}
+#s6 {
+    font-family: 'GFS Didot';
+}
+#s7 {
+    font-family: 'Hina Mincho';
+}
+#s8 {
+    font-family: 'IM Fell English';
+}
+#s9 {
+    font-family: 'Lusitana';
+}
+#s10 {
+    font-family: 'Nanum Myeongjo';
+}
+*/
