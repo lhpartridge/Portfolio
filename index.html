@@ -30,30 +30,21 @@
                 </div><!--end of main header row-->
             </div><!--end of main header container-->
         </section><!--end of main header section-->
+        
         <section class="top-nav-section">
             <div class="container top-nav-container">
                 <div class="row top-nav-row justify-content-around">
                     <nav class="nav navbar top-nav justify-content-between">
                         <a href="#home" class="nav-link top-nav-link">home</a>
-                        <a href="#about" class="nav-link top-nav-link">about me</a>
-                        <a href="#projects" class="nav-link top-nav-link">projects</a>
+                        <a href="about.html" class="nav-link top-nav-link">about me</a>
+                        <a href="projects.html" class="nav-link top-nav-link">projects</a>
                         <a href="#certifications" class="nav-link top-nav-link">certifications</a>
                         <a href="#interests" class="nav-link top-nav-link">interests</a>
                         <a href="#contact" class="nav-link top-nav-link">contact</a>
-                        <!--
-
-                            <a href="math_tech" class="nav-link top-nav-link">mathematics and technology</a>
-                            <a href="french" class="nav-link top-nav-link">french and cultural</a>
-                            <a href="education" class="nav-link top-nav-link">education</a>
-                            <a href="family" class="nav-link top-nav-link">family</a>
-                            <a href="interests" class="nav-link top-nav-link">interests</a>
-                            <a href="plans" class="nav-link top-nav-link">plans</a>
-                            <a href="anecdotes" class="nav-link top-nav-link">anecdotes</a>
-                        -->
                     </nav>
-                </div>
-            </div>
-        </section>
+                </div><!--end of top nav row-->
+            </div><!--end of top nav container-->
+        </section><!--end of top nav section-->
                             
                               
     </header>
@@ -62,7 +53,8 @@
            <div class="container banner-container"> 
                <div class="row banner-row justify-content-start">
                    <div class="div col-sm-8 name-div d-flex align-items-center justify-content-between">
-                       <h2 class="subheader about-subheader">about me</h2>
+                    <a href="about.html" class="nav-link about-link">
+                       <h2 class="subheader about-link about-subheader">about me</h2></a>
                        <h2 class="name">Lorraine Hall Partridge</h2>
                    </div>
                    <div class="div col-sm-4 image-div d-flex align-items-end">
@@ -83,9 +75,12 @@
                         <p class="text about-text about-text-2">I'm moving on now, empowering my clients to overcome the challenges on their own paths. </p>
                         <p class="text about-text about-text-3">Contact me and we'll seek a unique solution to your challenge. </p>
                     </div><!--end of text-div-->
-
-
                 </div><!--end of about-row-->
+                <div class="row more-row justify-content-center justify-content-md-around">
+                    <div class="col-11">
+                        <a href="about.html" class="top more more-about-me d-flex align-items-end justify-content-end">more</a>
+                    </div>
+                </div><!--end of more about me row-->
             </div><!--end of about container-->
         </section><!--end of about section-->
 
@@ -98,34 +93,25 @@
                     <div class="col-2 top">
                         <a href="#home" class="top d-flex align-items-end justify-content-end">top</a>
                     </div>
-                <div class="row projects-row justify-content-center justify-content-md-around">
-                    
-                    <figure class="project-div" id="project1">
-                        <a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link" target="_blank">
+                </div>
+                <div class="row projects-row justify-content-md-around">
+                    <div class="col-5">
+                        <figure class="project-div" id="project1">
+                            <a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link" target="_blank">
                             <img src="css/media/restaurant_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">The most recent class project involved creating a responsive design for a restaurant landing page and about page.  I used Bootstrap for the layout, with the assets coming from the model page.</figcaption>
-                    </figure>
-                    <figure class="project-div" id="project2">
-                        <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">The Venedor project evolved from creating a landing page based on a static image to one that included functionality features for currency, language, and cart totals, a carousel and cards for individual items with discount and price overlays.</figcaption>
-                    </figure>
-                    <figure class="project-div" id="project3">
-                        <a href="https://github.com/lhpartridge/graphicsUmbrella" class="nav-link project-link" target="_blank"><img src="css/media/graphics_umbrella_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">Another project based on creating a landing page from a static image, the GraphicsUmbrella page includes a banner mockup of a carousel, three content sections with text, cards and images, and a four-column footer with a footer navbar.  the assets were clipped from the model page.</figcaption>
-                    </figure>
-                    <figure class="project-div" id="project4">
-                        <a href="https://github.com/lhpartridge/Detroix-boot" class="nav-link project-link" target="_blank"><img src="css/media/detroix_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">The Detroix project was the transition point between using the layout methods of margin-padding-float, position, and flexbox before introducing Bootstrap.  This is the Bootstap version of the landing page.</figcaption>
-                    </figure>
-                    <figure class="project-div" id="project">
-                        <a href="https://github.com/lhpartridge/Aditii" class="nav-link project-link" target="_blank"><img src="css/media/aditii_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">My second major project developed a landing page for a shopping site using basic CSS layout philosophies introducing the HTML elements that support interactivity.  The page header includes a logo, a search bar and a navigation bar.  The main page sections include a banner, two featured products sections, with images, links, and buttons for purchases.  The footer has four lists with links for the store's departments.</figcaption>
-                    </figure>
-                    <figure class="project-div" id="project">
-                        <a href="https://github.com/lhpartridge/Bloom" class="nav-link project-link" target="_blank"><img src="css/media/bloom_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">The Bloom Landing Page was the first major class project. I built the page three ways using the CSS design philosophies of margin-padding-float, position, and flex-box.  The HTML includes a wrapper labeled inner to contain the elements in the layout.  Basic techniques include color matching, image cropping and font selection along with using gradients, lists and buttons.   </figcaption>
-                    </figure><!--end of projects-div-->
-                <!--end of projects column-->
+                            <figcaption class="text figcaption-text">The most recent class project involved creating a responsive design for a restaurant landing page and About page.  I used Bootstrap for the layout, with the assets coming from the model page.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-5">
+                        <figure class="project-div" id="project2">
+                            <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                            <figcaption class="text figcaption-text">The Venedor project evolved from creating a landing page based on a static image to one that included functionality features for currency, language, and cart totals, a carousel and cards for individual items with discount and price overlays.</figcaption>
+                        </figure>                        
+                    </div>
+                    <div class="col-11 more more-projects">
+                        <a href="projects.html" class="top d-flex align-items-end justify-content-end">more</a>
+                    </div>
+                  <!--end of projects-->
                 </div><!--end of projects row-->
             </div><!--end of projects container-->
         </section><!--end of projects section-->
@@ -172,6 +158,9 @@
 
                         <p class="text interests-text">I see the confluence of my interests in the challenge of creating interactive educational activities that will empower students to explore the French-speaking world.</p>
                     </div>
+                    <div class="col-11 more more-interests">
+                        <a href="about.html" class="top d-flex align-items-end justify-content-end">more</a>
+                    </div>
                 </div><!--end of interests row-->
             </div><!--end of interests container-->
         </section><!--end of interests section-->
@@ -200,40 +189,7 @@
                 </div>
             </div><!--end of contacts container-->
         </section><!--end of contacts section-->
-
-        <section class="carousel-section">
-            <div class="container-fluid carousel-container">
-                <div class="row carousel-row justify-content-center">
-                    <div class="col-10">
-                        <!--
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-interval="5000">
-                                    <img src="css/media/crow-pitcher-aesop.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-interval="5000">
-                                    <img src="css/media/crow-pitcher-aesop.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-interval="5000">
-                                    <img src="css/media/crow-reverse.jpg" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>--> 
-                        <!--end of carousel-->
-                    </div><!--end of carousel column-->
-                </div><!--end of carousel row-->
-            </div><!--end of carousel container-->
-        </section><!--end of carousel section-->
-
-        
+      
         <!-- 
         <section class="container-fluid family-section" id="family">
             <h2 class="section-subheader" id="family-header">family</h2>
@@ -263,186 +219,26 @@
                 </p>
             </div>
         </section>
-        -->
-        <!--
-
-        
-        
-        <section class="container-fluid plans-section" id="plans">
-            <h2 class="section-subheader" id="plans-header">plans</h2>
-            <div class="row interests-row justify-content-center d-block">
-                <h3 class="row-subheader study-subheader"></h3>
-                <p class="text interests-text">
-                    
-                </p>
-                <p class="text interests-text">
-                    
-                </p>
-                <p class="text interests-text">
-                   
-                </p>
-                <h3 class="row-subheader tech-subheader"></h3>
-                <p class="text interests-text">
-                    
-                </p>
-                <p class="text math-text">
-                   
-                </p>
-                <p class="text math-text">
-                    
-                </p>
-            </div>
-        </section>-->
-        <!-- 
-        <section class="container-fluid anecdotes-section" id="anecdotes">
-            <h2 class="section-subheader" id="anecdotes-header">anecdotes</h2>
-            <div class="row anecdotes-row justify-content-center d-block">
-                <h3 class="row-subheader anecdotes-subheader"></h3>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <p class="text anecdotes-text">
-                   
-                </p>
-                <h3 class="row-subheader anecdotes-subheader">how I passed my FBI background check</h3>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <p class="text anecdotes-text">
-                   
-                </p>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <h3 class="row-subheader anecdotes-subheader">big apple escapade</h3>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <p class="text anecdotes-text">
-                   
-                </p>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <h3 class="row-subheader anecdotes-subheader"></h3>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <p class="text anecdotes-text">
-                   
-                </p>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <h3 class="row-subheader anecdotes-subheader"></h3>
-                <p class="text anecdotes-text">
-                    
-                </p>
-                <p class="text anecdotes-text">
-                   
-                </p>
-                <p class="text anecdotes-text">
-                    
-                </p>
-            </div>
-        </section>
-        -->
+        -->     
     </main>
     <footer class="footer">
         <section class="footer-nav-section">
-            <div class="container-fluid footer-nav-container">
-                <div class="row footer-nav-row justify-content-around">
-
-                    <!--<div class="col">-->
-                        <!-- 
-
-                            <nav class="nav navbar footer-nav justify-content-around">
-                                <a href="#home" class="nav-link footer-nav-link">home</a>
-                                <a href="#about" class="nav-link footer-nav-link">about me</a>
-                                <a href="#projects" class="nav-link footer-nav-link">projects</a>
-                                <a href="#certifications" class="nav-link footer-nav-link">certifications</a>
-                                <a href="#interests" class="nav-link footer-nav-link">interests</a>
-                                <a href="#contact" class="nav-link footer-nav-link">contact</a>
-                            -->
-                            <!--
-
-                                <a href="math_tech" class="nav-link footer-nav-link">mathematics and technology</a>
-                                <a href="french" class="nav-link footer-nav-link">french and cultural</a>
-                                <a href="education" class="nav-link footer-nav-link">education</a>
-                                <a href="family" class="nav-link footer-nav-link">family</a>
-                                <a href="interests" class="nav-link footer-nav-link">interests</a>
-                                <a href="plans" class="nav-link footer-nav-link">plans</a>
-                                <a href="anecdotes" class="nav-link footer-nav-link">anecdotes</a>
-                            -->
-                        </nav>
-                    <!--</div>--><!--end of footer-nav column-->
-                </div><!--end of footer-row-->
+            <div class="container-fluid footer-container">
                 <div class="row colophon-row justify-content-md-center d-inline">
-                    <div class="col-11 colophon d-flex justify-content-center align-items-center">
+                    <div class="col-11 colophon d-flex justify-content-center align-items-end">
                         <h1 class=" subheader footer-subheader" id="footer-logo">apologicode</h1>  
                         <p class="text colophon-text">&copy2021  All rights reserved.</p>
                     </div>
                 </div><!--end of colophon-row-->
             </div><!--end of footer-container-->
-        </section>
+        </section><!--end of footer section-->
     </footer>
-        <!-- 
-        <div class="dedication">This page is dedicated to Dr. James Halsted, Professor in the Honors College at the University of Southern Mississippi.  He taught me to begin with my definitions as in mathematics.  We spent long hours in his office discussing the topics he covered in class and more.  He awarded me his Renaissance Person of the Year Award, the highest honor that I have ever received.  He truly understood my drive to exercise power by teaching and was the only professor who encouraged me to teach rather than to focus only on pursuing my majors.  Thank you Dr. Halsted for believing in me.  I hope that I have made you proud.</div>
-        -->
-
-                    <!-- 
-                <div class="row">
-                    <div class="col-3">
-                        <h3 id="s1">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s2">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s3">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s4">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s5">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s6">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s7">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s8">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s9">apologue</h3>
-                    </div>
-                    <div class="col-3">
-                        <h3 id="s10">apologue</h3>
-                    </div>
-                    
-
-
-                </div>
-                -->
-
-                
-                    <!--<div class="container-fluid top-header-container">  <div class="row top-header home">
-                        <h1 class="col title text-center" id="title">apologicode</h1>
-                     </div>--> <!--end of top header row-->
-                 <!--</div>--><!--end of header container-->
-             <!--</section>--><!--end of top header section-->
-            <!-- <section class="main-header-section">-->
-                <!--problems to resolve
-                add sr-only classes to links, etc.
-                add alt text for photos
-                make responsive
-                add photos for interests
-                update LinkedIn profile with certificate and add link to contacts-->
+<!--problems to resolve
+add sr-only classes to links, etc.
+add alt text for photos
+make responsive
+add photos for interests
+update LinkedIn profile with certificate and add link to contacts
+change the Projects section to a carousels-->
 </body>
 </html>

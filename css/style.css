@@ -86,27 +86,31 @@ h3 {
     
 }
 
-.top-nav-link, .footer-nav-link {
+.nav-link {
     color: var(--textColor);
     font-size: calc(8px + ( 14 - 8) * (100vw - 300px) / (800 - 300) ); 
     font-family: var(--subheaderFont);
     font-weight: 700;
-    background-color: var(--waterColor);
+
 }
 
-.top-nav-link:hover, .footer-nav-link:hover {
+.nav-link:hover {
     color: var(--pebbleColor);
 }
 
-.top {
+.about-link:hover {
+    color: var(--waterColor);
+}
+
+.top, .more {
     font-family: var(--subheaderFont);
-    font-size: 32px;
+    font-size: 20px;
     color: var(--textColor);
     font-weight: 700;
 }
 
-.top:hover {
-    color: var(--pebbleColor);
+.top:hover, more:hover  {
+    color: var(--waterColor);
     text-decoration: none;
 }
 
@@ -121,55 +125,44 @@ h3 {
     font-size:  64px;
 }
 
-.logo-subheader:hover {
-    color: #f4f1c0;
-}
- .logo-text:hover {
-     color: #f4f1c0;
- }
-
-
  .logo {
      position: relative;
      height: 30vh;
-    
  }
 
 #apologue {
     position: absolute;
     left: 10vw;
-    
-    opacity: 0%;
-    
     animation-direction: normal;
     animation-name: fadeOut;
-    animation-duration: 8s;
-    
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    
 }
 
 #apologicode {
     position: absolute;
     left: 10vw;
-    /*
-    opacity: 100%;
-    */
     animation-name: fadeIn;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-direction: normal;
-    
     animation-iteration-count: infinite;
-    
 }
+
 
 
 .logo-text {
     background-color: var(--bannerColor);
     color: var(--bgColor);
     font-family: var(--headerFont);
-    font-size: 24px;
+    font-size: 28px;
 }
+/*
+
+.logo-text:hover {
+    color: #f4f1c0;
+}
+*/
+
 
 #logo-text-1 {
     position: absolute;
@@ -177,21 +170,17 @@ h3 {
     opacity: 0%;
     animation-direction: normal;
     animation-name: fadeOut;
-    animation-duration: 8s;
-    
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    
 }
 
 #logo-text-2 {
     position: absolute;
     left: 0;
     animation-name: fadeIn;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-direction: normal;
-    
     animation-iteration-count: infinite;
-    
 }
 
 
@@ -202,6 +191,7 @@ h3 {
     25% {
         opacity: 100%;
     }
+    
     50% {
         opacity: 100%;
     }
@@ -219,19 +209,21 @@ h3 {
 
 @keyframes fadeIn {
     0% {
-        opacity: 0%;
+        opacity: 25%;
     }
     25% {
         opacity: 0%;
     }
+
     50% {
-        opacity: 0%;
+        opacity: 100%;
     }
     75% {
         opacity: 100%;
     }
+    
     100% {
-        opacity: 0%;
+        opacity: 25%;
     }
 }
 
@@ -302,8 +294,9 @@ p {
     background-color: #e4e7f4;
 }
 
-.projects-section {
+.projects-section, .bio-section {
     background-color: var(--bgColor);
+    padding: 20px 0;
 }
 
 
@@ -314,7 +307,7 @@ p {
 
 figure {
     border: thin var(--bannerColor) solid;
-    padding: 10px;
+    padding: 10px 0;
     max-width: 450px;
     background-color: var(--figcaptionBgColor);
 }
@@ -373,10 +366,15 @@ figcaption {
     padding-top: 20px;
 }
 
+.contacts-section .top:hover {
+    color: var(--pebbleColor);
+}
+
 .contacts-text {
     background-color: transparent;
     font-size:  20px;
     font-weight:  500;
+    padding: 0;
 }
 
 .contacts-link {
@@ -403,7 +401,8 @@ a .contacts-text:hover {
 
 footer {
     background: linear-gradient(var(--waterColor), #737687);
-    height: 200px;
+    height: auto;
+    min-height: 150px;
 }
 
 .footer-subheader {
@@ -420,9 +419,10 @@ footer {
 .colophon-text {
     background-color: transparent;
     font-family: var(--textFont);
-    font-size: 24px;
+    font-size: 18px;
     margin: 5px 0 0 0;
     padding: 0;
+    
 }
 
 .dedication {
