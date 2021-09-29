@@ -11,11 +11,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Benne&family=Crimson+Text&family=Fanwood+Text&family=Fredericka+the+Great&family=GFS+Didot&family=Gowun+Batang&family=Gupter&family=Hina+Mincho&family=IM+Fell+English&family=Julius+Sans+One&family=Lusitana&family=Nanum+Myeongjo:wght@700&family=PT+Serif+Caption&family=Sorts+Mill+Goudy&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>apologicode</title>
+    <title>apologicode-projects</title>
 
 </head>
 <body>
-    <header class="header" id="home">
+    <header class="header" id="projects-home">
         <section class="top-header-section">
             <div class="container-fluid main-header-container">
                 <div class="row header-row">
@@ -34,13 +34,18 @@
         <section class="top-nav-section">
             <div class="container top-nav-container">
                 <div class="row top-nav-row justify-content-around">
-                    <nav class="nav navbar top-nav justify-content-between">
-                        <a href="#home" class="nav-link top-nav-link">home</a>
-                        <a href="#about" class="nav-link top-nav-link">about me</a>
-                        <a href="#projects" class="nav-link top-nav-link">projects</a>
-                        <a href="#certifications" class="nav-link top-nav-link">certifications</a>
-                        <a href="#interests" class="nav-link top-nav-link">interests</a>
-                        <a href="#contact" class="nav-link top-nav-link">contact</a>
+                    <nav class="col nav navbar navbar-expand-md navbar-light top-nav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">  
+                            <a href="index.html" class="nav-link top-nav-link">home</a>
+                            <a href="about.html" class="nav-link top-nav-link">about me</a>
+                            <a href="projects.html" class="nav-link top-nav-link active">projects</a>
+                            <a href="index.html#certifications" class="nav-link top-nav-link">certifications</a>
+                            <a href="about.html" class="nav-link top-nav-link">interests</a>
+                            <a href="index.html#contacts" class="nav-link top-nav-link">contact</a>
+                        </div>
                     </nav>
                 </div><!--end of top nav row-->
             </div><!--end of top nav container-->
@@ -53,9 +58,9 @@
            <div class="container banner-container"> 
                <div class="row banner-row justify-content-start">
                    <div class="div col-sm-8 name-div d-flex align-items-center justify-content-between">
-                    <div class="div col-sm-4 col-md-2 headshot-div d-flex justify-content-end">
-                        <img src="css/media/headshot.png" alt="Lorraine Partridge" id="headshot">
-                    </div>
+                        <div class="div headshot-div d-flex justify-content-end">
+                            <img src="css/media/headshot.png" alt="Lorraine Partridge headshot" id="headshot">
+                        </div>
                        <h2 class="name">Lorraine Hall Partridge</h2>
                    </div>
                    <div class="div col-sm-4 image-div d-flex align-items-end">
@@ -72,37 +77,40 @@
                         <h2 class="subheader about-subheader">projects</h2>
                     </div>
                     <div class="col-2 top">
-                        <a href="#home" class="top d-flex align-items-end justify-content-end">top</a>
+                        <a href="index.html" class="top d-flex align-items-end justify-content-end">home</a>
                     </div>
                 <div class="row projects-row justify-content-center justify-content-md-around">
                     
                     <figure class="project-div" id="project1">
                         <a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link" target="_blank">
-                            <img src="css/media/restaurant_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                            <img src="css/media/restaurant_screen_shot.PNG" alt="screen shot of the Restaurant project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The most recent class project involved creating a responsive design for a restaurant landing page and about page.  I used Bootstrap for the layout, with the assets coming from the model page.</figcaption>
                     </figure>
                     <figure class="project-div" id="project2">
-                        <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                        <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="screen shot of the Venedor project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The Venedor project evolved from creating a landing page based on a static image to one that included functionality features for currency, language, and cart totals, a carousel and cards for individual items with discount and price overlays.</figcaption>
                     </figure>
                     <figure class="project-div" id="project3">
-                        <a href="https://github.com/lhpartridge/graphicsUmbrella" class="nav-link project-link" target="_blank"><img src="css/media/graphics_umbrella_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                        <a href="https://github.com/lhpartridge/graphicsUmbrella" class="nav-link project-link" target="_blank"><img src="css/media/graphics_umbrella_screen_shot.PNG" alt="screen shot of the GraphicsUmbrella project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">Another project based on creating a landing page from a static image, the GraphicsUmbrella page includes a banner mockup of a carousel, three content sections with text, cards and images, and a four-column footer with a footer navbar.  the assets were clipped from the model page.</figcaption>
                     </figure>
                     <figure class="project-div" id="project4">
-                        <a href="https://github.com/lhpartridge/Detroix-boot" class="nav-link project-link" target="_blank"><img src="css/media/detroix_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                        <a href="https://github.com/lhpartridge/Detroix-boot" class="nav-link project-link" target="_blank"><img src="css/media/detroix_screen_shot.PNG" alt="screen shot of the Detroix project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The Detroix project was the transition point between using the layout methods of margin-padding-float, position, and flexbox before introducing Bootstrap.  This is the Bootstap version of the landing page.</figcaption>
                     </figure>
                     <figure class="project-div" id="project">
-                        <a href="https://github.com/lhpartridge/Aditii" class="nav-link project-link" target="_blank"><img src="css/media/aditii_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                        <a href="https://github.com/lhpartridge/Aditii" class="nav-link project-link" target="_blank"><img src="css/media/aditii_screen_shot.PNG" alt="screen shot of the Aditii project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">My second major project developed a landing page for a shopping site using basic CSS layout philosophies introducing the HTML elements that support interactivity.  The page header includes a logo, a search bar and a navigation bar.  The main page sections include a banner, two featured products sections, with images, links, and buttons for purchases.  The footer has four lists with links for the store's departments.</figcaption>
                     </figure>
                     <figure class="project-div" id="project">
-                        <a href="https://github.com/lhpartridge/Bloom" class="nav-link project-link" target="_blank"><img src="css/media/bloom_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                        <a href="https://github.com/lhpartridge/Bloom" class="nav-link project-link" target="_blank"><img src="css/media/bloom_screen_shot.PNG" alt="screen shot of the Bloom Landing Page project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The Bloom Landing Page was the first major class project. I built the page three ways using the CSS design philosophies of margin-padding-float, position, and flex-box.  The HTML includes a wrapper labeled inner to contain the elements in the layout.  Basic techniques include color matching, image cropping and font selection along with using gradients, lists and buttons.   </figcaption>
                     </figure><!--end of projects-div-->
                 <!--end of projects column-->
                 </div><!--end of projects row-->
+                <div class="col-11 top">
+                    <a href="index.html" class="top d-flex align-items-end justify-content-end">home</a>
+                </div>
             </div><!--end of projects container-->
         </section><!--end of projects section-->
      

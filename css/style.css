@@ -11,50 +11,34 @@
     --subheaderFont:'Julius Sans One', sans-serif;
     --textFont: 'Gowun Batang', serif;
 }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
 /*
-font-family: 'Antic Didone', serif;
-font-family: 'Benne', serif;
-font-family: 'Crimson Text', serif;
-font-family: 'Fanwood Text', serif;
 font-family: 'Fredericka the Great', cursive;
-font-family: 'GFS Didot', serif;
 >font-family: 'Gowun Batang', serif;
-font-family: 'Gupter', serif;
-font-family: 'Hina Mincho', serif;
-font-family: 'IM Fell English', serif;
 font-family: 'Julius Sans One', sans-serif;
-font-family: 'Lusitana', serif;
-font-family: 'Nanum Myeongjo', serif;
->font-family: 'PT Serif Caption', serif;
-font-family: 'Sorts Mill Goudy', serif;
-font-family: 'Source Serif Pro', serif;
 */
 body {
-    /*background-image: url("../css/media/metallic_blue-4.PNG");*/
     background-color: var(--imageBg);
-  
     margin: 0;
     padding: 0;
 }
-/*
-header
-{
-    background-image: url("media/dark_green_metallic_1.JPG");
-    background-image: url("../../dark_blue_metallic_1.jpg");
-    height: 100vh;
-}
-
-
-#1b2231
-
-737687
-
-.top-header-section {
-    background-image: url("../css/media/metallic_blue-4.PNG");
-    margin: 0;
-    height: 40px;
-}
-*/
 
 #title {
     font-family:  var(--headerFont);
@@ -64,26 +48,24 @@ h3 {
     color: var(--sectionColor);
     font-size: 48px;
 }
-
+/*
 .main-header-section {
     background-color: var(--bgColor);
 }
+*/
 
 .top-header-section {
       background-color: #737687;
+      padding-bottom: 20px;
 }
 
 .top-header {
     margin-top: 40px;
     height: auto;
-    
 }
-
 
 .top-nav-section {
     background-color: var(--waterColor);
-
-    
 }
 
 .nav-link {
@@ -91,7 +73,6 @@ h3 {
     font-size: calc(8px + ( 14 - 8) * (100vw - 300px) / (800 - 300) ); 
     font-family: var(--subheaderFont);
     font-weight: 700;
-
 }
 
 .nav-link:hover {
@@ -104,7 +85,7 @@ h3 {
 
 .top, .more {
     font-family: var(--subheaderFont);
-    font-size: 20px;
+    font-size: calc(12px + ( 20 - 12) * (100vw - 300px) / (800 - 300) );
     color: var(--textColor);
     font-weight: 700;
 }
@@ -122,39 +103,40 @@ h3 {
 .logo-subheader {
     font-family: var(--headerFont);
     color: var(--sectionColor);
-    font-size:  64px;
+    font-size: calc(48px + ( 64 - 48) * (100vw - 300px) / (800 - 300) );
 }
 
  .logo {
      position: relative;
-     height: 30vh;
+     height: 25vh;
+     min-height: 150px;
+     margin: 0;
  }
 
 #apologue {
     position: absolute;
-    left: 10vw;
+    left: 1vw;
     animation-direction: normal;
     animation-name: fadeOut;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
+
 #apologicode {
     position: absolute;
-    left: 10vw;
+    left: 1vw;
     animation-name: fadeIn;
     animation-duration: 10s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
 
-
-
 .logo-text {
     background-color: var(--bannerColor);
     color: var(--bgColor);
     font-family: var(--headerFont);
-    font-size: 28px;
+    font-size: calc(12px + ( 18 - 12) * (100vw - 300px) / (800 - 300) );
 }
 /*
 
@@ -163,10 +145,14 @@ h3 {
 }
 */
 
+.slogan {
+    position: relative;
+    margin: 0;
+}
 
 #logo-text-1 {
     position: absolute;
-    left: 0;
+    left: 1vw;
     opacity: 0%;
     animation-direction: normal;
     animation-name: fadeOut;
@@ -176,7 +162,7 @@ h3 {
 
 #logo-text-2 {
     position: absolute;
-    left: 0;
+    left: 1vw;
     animation-name: fadeIn;
     animation-duration: 10s;
     animation-direction: normal;
@@ -188,12 +174,15 @@ h3 {
     0% {
         opacity: 0%;
     }
+    12.5% {
+        opacity: 50%;
+    }
     25% {
         opacity: 100%;
     }
     
     50% {
-        opacity: 100%;
+        opacity: 75%;
     }
 
     75% {
@@ -221,6 +210,10 @@ h3 {
     75% {
         opacity: 100%;
     }
+
+    87.5% {
+        opacity: 50%;
+    }
     
     100% {
         opacity: 25%;
@@ -230,10 +223,19 @@ h3 {
 
 .banner-section {
     background: linear-gradient(to right, var(--bgColor), var(--imageBg));
+    padding-top: 20px;
+}
+
+.headshot {
+    max-height: 30vh;
+}
+
+.crow-div {
+    padding: 0;
 }
 
 .crow-image {
-    max-height: 40vh;
+    max-height: 30vh;
     opacity: 60%;
     box-shadow: 0 0 8px 8px var(--pebbleColor) inset;
 }
@@ -273,11 +275,12 @@ h1 {
 
 h2 {
     font-family: var(--subheaderFont);
+    font-size: calc(18px + (26 - 18) * (100vw - 300px) / (800 - 300) );
     color: var(--textColor);
     font-weight: 600;
 }
 
-banner {
+.banner {
     height:  400px;
     background-image: linear-gradient(to top right, #1b2231, #737687);
     
@@ -299,7 +302,9 @@ p {
     padding: 20px 0;
 }
 
-
+.project-column {
+    padding: 0;
+}
 
 .project-div, .project-link {
     padding:  0px;
@@ -309,25 +314,25 @@ figure {
     border: thin var(--bannerColor) solid;
     padding: 10px 0;
     max-width: 450px;
-    background-color: var(--figcaptionBgColor);
+    background-color: var(--pebbleColor);
 }
 
 figcaption {
-    max-width: 500px;
+    max-width: 450px;
     padding: 0 10px;
     border: 2px var(--bannerColor);
     margin: 10px;
 }
 
 .project-image {
-    max-width: 450px;
+    /*max-width: 450px;*/
     padding: 10px;
     
 }
 
 .figcaption-text {
     background-color: var(--imageBg);
-
+    font-size: calc(14px + (18 - 14) * (100vw - 300px) / (800 - 300) );
 }
 
 .certifications-section {
@@ -337,7 +342,7 @@ figcaption {
 
 .certifications-text {
     font-family: var(--textFont);
-    font-size: 20px;
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
     font-weight: 500;
     text-transform: capitalize;
     background-color: transparent;
@@ -358,7 +363,7 @@ figcaption {
 
 .interests-text {
     background-color: transparent;
-    font-size: 20px;
+    padding: 0 3px;
 }
 
 .contacts-section {
@@ -422,45 +427,8 @@ footer {
     font-size: 18px;
     margin: 5px 0 0 0;
     padding: 0;
-    
 }
 
 .dedication {
     background-color: #e4e7f4;
 }
-
-/*
-
-#s1 {
-    font-family: 'Antic Didone';
-}
-
-#s2 {
-    font-family: 'Benne';
-}
-
-#s3 {
-    font-family: 'Crimson Text';
-}
-#s4 {
-    font-family: 'Fanwood Text';
-}
-#s5 {
-    font-family: 'Fredericka the Great';
-}
-#s6 {
-    font-family: 'GFS Didot';
-}
-#s7 {
-    font-family: 'Hina Mincho';
-}
-#s8 {
-    font-family: 'IM Fell English';
-}
-#s9 {
-    font-family: 'Lusitana';
-}
-#s10 {
-    font-family: 'Nanum Myeongjo';
-}
-*/

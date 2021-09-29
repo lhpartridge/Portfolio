@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Benne&family=Crimson+Text&family=Fanwood+Text&family=Fredericka+the+Great&family=GFS+Didot&family=Gowun+Batang&family=Gupter&family=Hina+Mincho&family=IM+Fell+English&family=Julius+Sans+One&family=Lusitana&family=Nanum+Myeongjo:wght@700&family=PT+Serif+Caption&family=Sorts+Mill+Goudy&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/488ef7f560/UntitledProject/style-svg.css">
+<script defer src="https://i.icomoon.io/public/temp/488ef7f560/UntitledProject/svgxuse.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>apologicode</title>
 
@@ -17,30 +19,35 @@
 <body>
     <header class="header" id="home">
         <section class="top-header-section">
-            <div class="container-fluid main-header-container">
-                <div class="row header-row">
-                    <div class="logo col-sm-6 d-flex align-items-center"> 
-                        <h1 class="subheader logo-subheader" id="apologue">apologue</h1>
-                        <h1 class=" subheader logo-subheader" id="apologicode">apologicode</h1>     
-                    </div>
-                    <div class="slogan col-sm-6 d-flex align-items-center"> 
-                        <p class="text logo-text" id="logo-text-1">a moral fable, especially one with animals</p>
-                        <p class="text logo-text" id="logo-text-2">unique challenges inspire creative solutions</p>
-                    </div>
+            <div class="container main-header-container">
+                <div class="row header-row justify-content-start">
+                            <div class="logo col-7 col-sm-6 d-flex align-items-center"> 
+                                <h1 class="subheader logo-subheader" id="apologue">apologue</h1>
+                                <h1 class=" subheader logo-subheader" id="apologicode">apologicode</h1>   
+                            </div>
+                            <div class="slogan col-7 col-sm-6 d-flex align-items-center"> 
+                                <p class="text logo-text" id="logo-text-1">a moral fable, especially one with animals</p>
+                                <p class="text logo-text" id="logo-text-2">unique challenges inspire creative solutions</p>
+                            </div>
                 </div><!--end of main header row-->
             </div><!--end of main header container-->
         </section><!--end of main header section-->
         
         <section class="top-nav-section">
             <div class="container top-nav-container">
-                <div class="row top-nav-row justify-content-around">
-                    <nav class="nav navbar top-nav justify-content-between">
-                        <a href="#home" class="nav-link top-nav-link">home</a>
-                        <a href="about.html" class="nav-link top-nav-link">about me</a>
-                        <a href="projects.html" class="nav-link top-nav-link">projects</a>
-                        <a href="#certifications" class="nav-link top-nav-link">certifications</a>
-                        <a href="#interests" class="nav-link top-nav-link">interests</a>
-                        <a href="#contact" class="nav-link top-nav-link">contact</a>
+                <div class="row top-nav-row">
+                    <nav class="col nav navbar navbar-expand-md navbar-light top-nav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-md-between" id="navbarToggler">  
+                            <a href="#home" class="nav-link top-nav-link active">home</a>
+                            <a href="about.html" class="nav-link top-nav-link">about me</a>
+                            <a href="projects.html" class="nav-link top-nav-link">projects</a>
+                            <a href="#certifications" class="nav-link top-nav-link">certifications</a>
+                            <a href="#interests" class="nav-link top-nav-link">interests</a>
+                            <a href="#contacts" class="nav-link top-nav-link">contact</a>
+                        </div>
                     </nav>
                 </div><!--end of top nav row-->
             </div><!--end of top nav container-->
@@ -50,15 +57,18 @@
     </header>
     <main>
         <section class=" banner-section">
-           <div class="container banner-container"> 
-               <div class="row banner-row justify-content-start">
-                   <div class="div col-sm-8 name-div d-flex align-items-center justify-content-between">
-                    <a href="about.html" class="nav-link about-link">
-                       <h2 class="subheader about-link about-subheader">about me</h2></a>
-                       <h2 class="name">Lorraine Hall Partridge</h2>
+           <div class="container-fluid banner-container"> 
+               <div class="row banner-row align-items-center justify-content-center">
+                   <!--<div class="div col-sm-8 name-div d-flex align-items-center justify-content-between">-->
+
+                    <div class="col-6 col-sm-2 order-1 order-sm-0 headshot-div d-flex align-items-center justify-content-center ">
+                        <img src="css/media/headshot.png" alt="Lorraine Partridge headshot" id="headshot" class="img-fluid headshot">
+                    </div>
+                    <div class="col-6 col-sm-6 order-2 order sm-1 d-flex justify-content-center"> 
+                       <h2 class="myName">Lorraine Partridge</h2>
                    </div>
-                   <div class="div col-sm-4 image-div d-flex align-items-end">
-                       <img src="css/media/crow and pitcher reverse.PNG" alt="crow and pitcher" class="crow-image image-fluid ">
+                   <div class="crow-div col-12 col-sm-4 col-md-4 order-0 order-sm-2 image-div d-none d-sm-flex align-items-center justify-content-center justify-content-md-end">
+                       <img src="css/media/crow and pitcher reverse.PNG" alt="crow and pitcher" class="crow-image img-fluid ">
                    </div><!--end of banner-column-->
                </div><!--end of banner-row-->
             </div><!--end of banner-container-->
@@ -66,11 +76,11 @@
 
         <section class="about-section" id="about">
             <div class="container-fluid about-container">
-                <div class="row about-row">
-                    <div class="div col-sm-4 col-md-2 headshot-div d-flex justify-content-end">
+                <div class="row about-row justify-content-center">
+                    <!--<div class="div col-sm-4 col-md-3 headshot-div d-flex justify-content-center">
                         <img src="css/media/headshot.png" alt="Lorraine Partridge" id="headshot">
-                    </div>
-                    <div class="text-div col-8">
+                    </div>-->
+                    <div class="text-div col-11">
                         <p class="text about-text about-text-1">I'm a junior developer on the next part of my life's path, making a full circle from my beginnings as a NASA intern in the Data Processing Center of the Johnson Space Center.  On the way, I've been a roadie, worked in a truck stop, and learned French.  I spent three decades changing the world one person at a time in the inner city, bringing the world to my students and empowering them to seek their own horizons. </p>
                         <p class="text about-text about-text-2">I'm moving on now, empowering my clients to overcome the challenges on their own paths. </p>
                         <p class="text about-text about-text-3">Contact me and we'll seek a unique solution to your challenge. </p>
@@ -94,25 +104,28 @@
                         <a href="#home" class="top d-flex align-items-end justify-content-end">top</a>
                     </div>
                 </div>
-                <div class="row projects-row justify-content-md-around">
-                    <div class="col-5">
+                <div class="row projects-row d-inline d-sm-flex  justify-content-center justify-content-sm-around justify-content-lg-between">
+                    <div class="col col-sm-5 col-lg-6 project-column d-flex justify-content-center">
                         <figure class="project-div" id="project1">
-                            <a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link" target="_blank">
-                            <img src="css/media/restaurant_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
-                            <figcaption class="text figcaption-text">The most recent class project involved creating a responsive design for a restaurant landing page and About page.  I used Bootstrap for the layout, with the assets coming from the model page.</figcaption>
+                            <a href="https://github.com/lhpartridge/Restaurant" 
+                            class="nav-link project-link" target="_blank">
+                            <img src="css/media/restaurant_screen_shot.PNG" alt="screen shot of the restaurant project" class="figure-img img-fluid project-image" /></a>
+                            <figcaption class="text figcaption-text">The most recent class project involved creating a responsive design for a restaurant landing page and About page.  I used Bootstrap for the layout, with the assets coming from the model page.<a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link" target="_blank"></a></figcaption>
                         </figure>
                     </div>
-                    <div class="col-5">
+                    <div class="col col-sm-5 col-lg-6 d-flex justify-content-center project-column">
                         <figure class="project-div" id="project2">
-                            <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="placeholder img" class="img-fluid project-image" /></a>
+                            <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="screen shot of the venedor project" class="figure-img img-fluid project-image" /></a>
                             <figcaption class="text figcaption-text">The Venedor project evolved from creating a landing page based on a static image to one that included functionality features for currency, language, and cart totals, a carousel and cards for individual items with discount and price overlays.</figcaption>
                         </figure>                        
                     </div>
+                    <!--end of projects-->
+                </div><!--end of projects row-->
+                <div class="row more-row justify-content-center justify-content-sm-around">
                     <div class="col-11 more more-projects">
                         <a href="projects.html" class="top d-flex align-items-end justify-content-end">more</a>
                     </div>
-                  <!--end of projects-->
-                </div><!--end of projects row-->
+                </div><!--end of more about me row-->                 
             </div><!--end of projects container-->
         </section><!--end of projects section-->
 
@@ -174,60 +187,31 @@
                     <div class="col-2 top">
                         <a href="#home" class="top d-flex align-items-end justify-content-end">top</a>
                     </div>
-                </div><!--end of interests subheader row-->
-                <div class="row contacts justify-content-center justify-content-md-end">
-                    <div class="col-4">
+                </div><!--end of contacts subheader row-->
+                <div class="row justify-content-around">
+                    <div class="col-10 col-md-5 contacts-div">
                         <p class="text contacts-text">Lorraine Hall Partridge</p>
                         <a href="tel:+16015556513" class="phone"><p class="text contacts-text"><span class="" id="phone">Tel</span>: Call me</p></a>
                         <a href="mailto:apologica@gmail.com" class="address"><p class="text contacts-text"><span class="" id="mail">Email me</span></p></a>
                     </div>
-                    <div class="col-4">
-                        <a href="https://github.com/lhpartridge" class="nav-link contacts-link" id="github" target="_blank"><p class="text contacts-text">Github</p></a>
-                        <a href="@lhpartridge" class="nav-link contacts-link" id="twitter" target="_blank"><p class="text contacts-text">Twitter</p></a>
-                        <a href="" class="nav-link contacts-link" id="linkedIn" target="_blank"><p class="text contacts-text">LinkedIn</p></a>
+                    <div class="w-100 d-sm-none"></div>
+                    <div class="col-10 col-sm-5 contacts-div">
+                        <a href="https://github.com/lhpartridge" class="nav-link contacts-link" id="github" target="_blank"><p class="text contacts-text"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>&nbspGithub</p></a>
+                        <a href="https://twitter.com/lhpartridge" class="nav-link contacts-link" id="twitter" target="_blank"><p class="text contacts-text"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>&nbspTwitter</p></a>
+                        <a href="https://www.linkedin.com/in/lorraine-partridge-12222119/" class="nav-link contacts-link" id="linkedIn" target="_blank"><p class="text contacts-text"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>&nbspLinkedIn</p></a>
                     </div>
-                </div>
+                </div><!--end of contacts row-->
             </div><!--end of contacts container-->
         </section><!--end of contacts section-->
-      
-        <!-- 
-        <section class="container-fluid family-section" id="family">
-            <h2 class="section-subheader" id="family-header">family</h2>
-            <div class="row family-row justify-content-center d-block">
-                <h3 class="row-subheader study-subheader">family members</h3>
-                <p class="text family-text">
-                    spouse
-                </p>
-                <p class="text family-text">
-                    children
-                </p>
-                <p class="text family-text">
-                   grandchild
-                </p>
-                <p class="text family-text">
-                    pets
-                 </p>
-                <h3 class="row-subheader tech-subheader">family history</h3>
-                <p class="text family-text">
-                    maternal family
-                </p>
-                <p class="text family-text">
-                   paternal family
-                </p>
-                <p class="text family-text">
-                    in-laws history
-                </p>
-            </div>
-        </section>
-        -->     
+         
     </main>
     <footer class="footer">
         <section class="footer-nav-section">
             <div class="container-fluid footer-container">
                 <div class="row colophon-row justify-content-md-center d-inline">
-                    <div class="col-11 colophon d-flex justify-content-center align-items-end">
-                        <h1 class=" subheader footer-subheader" id="footer-logo">apologicode</h1>  
-                        <p class="text colophon-text">&copy2021  All rights reserved.</p>
+                    <div class="col col-sm-11 colophon d-md-flex justify-content-center align-items-end">
+                        <h1 class=" subheader footer-subheader d-flex justify-content-center" id="footer-logo">apologicode</h1>  
+                        <p class="text colophon-text d-flex justify-content-center">&copy2021  All rights reserved.</p>
                     </div>
                 </div><!--end of colophon-row-->
             </div><!--end of footer-container-->
@@ -237,8 +221,24 @@
 add sr-only classes to links, etc.
 add alt text for photos
 make responsive
+    center logo and logo text on small devices
 add photos for interests
 update LinkedIn profile with certificate and add link to contacts
-change the Projects section to a carousels-->
+add transitions and scroll styling
+possibly use a float for the top/more links; bootstrap has a clearfix class-->
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-github" viewBox="0 0 32 32">
+    <path d="M16 0.396c-8.84 0-16 7.164-16 16 0 7.071 4.584 13.067 10.94 15.18 0.8 0.151 1.093-0.344 1.093-0.769 0-0.38-0.013-1.387-0.020-2.72-4.451 0.965-5.389-2.147-5.389-2.147-0.728-1.847-1.78-2.34-1.78-2.34-1.449-0.992 0.112-0.972 0.112-0.972 1.607 0.112 2.451 1.648 2.451 1.648 1.427 2.447 3.745 1.74 4.66 1.331 0.144-1.035 0.556-1.74 1.013-2.14-3.553-0.4-7.288-1.776-7.288-7.907 0-1.747 0.62-3.173 1.647-4.293-0.18-0.404-0.72-2.031 0.14-4.235 0 0 1.34-0.429 4.4 1.64 1.28-0.356 2.64-0.532 4-0.54 1.36 0.008 2.72 0.184 4 0.54 3.040-2.069 4.38-1.64 4.38-1.64 0.86 2.204 0.32 3.831 0.16 4.235 1.020 1.12 1.64 2.547 1.64 4.293 0 6.147-3.74 7.5-7.3 7.893 0.56 0.48 1.080 1.461 1.080 2.96 0 2.141-0.020 3.861-0.020 4.381 0 0.42 0.28 0.92 1.1 0.76 6.401-2.099 10.981-8.099 10.981-15.159 0-8.836-7.164-16-16-16z"></path>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 32 32">
+    <path fill="#0077b5" style="fill: var(--color1, #0077b5)" d="M27.263 27.269h-4.739v-7.425c0-1.771-0.036-4.049-2.469-4.049-2.471 0-2.848 1.927-2.848 3.919v7.556h-4.739v-15.269h4.552v2.081h0.061c0.636-1.2 2.183-2.467 4.493-2.467 4.801 0 5.689 3.16 5.689 7.273zM7.116 9.911c-1.525 0-2.751-1.235-2.751-2.753 0-1.517 1.227-2.751 2.751-2.751 1.52 0 2.752 1.233 2.752 2.751 0 1.519-1.233 2.753-2.752 2.753zM9.492 27.269h-4.752v-15.269h4.752zM29.633 0h-27.272c-1.305 0-2.361 1.032-2.361 2.305v27.389c0 1.275 1.056 2.305 2.361 2.305h27.268c1.304 0 2.371-1.031 2.371-2.305v-27.389c0-1.273-1.067-2.305-2.371-2.305z"></path>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 32 32">
+    <path fill="#1da1f2" style="fill: var(--color2, #1da1f2)" d="M31.939 6.092c-1.18 0.519-2.44 0.872-3.767 1.033 1.352-0.815 2.392-2.099 2.884-3.631-1.268 0.74-2.673 1.279-4.169 1.579-1.195-1.279-2.897-2.079-4.788-2.079-3.623 0-6.56 2.937-6.56 6.556 0 0.52 0.060 1.020 0.169 1.499-5.453-0.257-10.287-2.876-13.521-6.835-0.569 0.963-0.888 2.081-0.888 3.3 0 2.28 1.16 4.284 2.917 5.461-1.076-0.035-2.088-0.331-2.971-0.821v0.081c0 3.18 2.257 5.832 5.261 6.436-0.551 0.148-1.132 0.228-1.728 0.228-0.419 0-0.82-0.040-1.221-0.115 0.841 2.604 3.26 4.503 6.139 4.556-2.24 1.759-5.079 2.807-8.136 2.807-0.52 0-1.039-0.031-1.56-0.089 2.919 1.859 6.357 2.945 10.076 2.945 12.072 0 18.665-9.995 18.665-18.648 0-0.279 0-0.56-0.020-0.84 1.281-0.919 2.4-2.080 3.28-3.397z"></path>
+    </symbol>
+    </defs>
+    </svg>
+    
 </body>
 </html>
