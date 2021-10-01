@@ -42,7 +42,7 @@
                             <a href="index.html" class="nav-link top-nav-link">home</a>
                             <a href="about.html" class="nav-link top-nav-link">about me</a>
                             <a href="projects.html" class="nav-link top-nav-link active">projects</a>
-                            <a href="index.html#certifications" class="nav-link top-nav-link">certifications</a>
+                            <a href="index.html#credentials" class="nav-link top-nav-link">credentials</a>
                             <a href="about.html" class="nav-link top-nav-link">interests</a>
                             <a href="index.html#contacts" class="nav-link top-nav-link">contact</a>
                         </div>
@@ -55,20 +55,20 @@
     </header>
     <main>
         <section class=" banner-section">
-           <div class="container banner-container"> 
-               <div class="row banner-row justify-content-start">
-                   <div class="div col-sm-8 name-div d-flex align-items-center justify-content-between">
-                        <div class="div headshot-div d-flex justify-content-end">
-                            <img src="css/media/headshot.png" alt="Lorraine Partridge headshot" id="headshot">
-                        </div>
-                       <h2 class="name">Lorraine Hall Partridge</h2>
-                   </div>
-                   <div class="div col-sm-4 image-div d-flex align-items-end">
-                       <img src="css/media/crow and pitcher reverse.PNG" alt="crow and pitcher" class="crow-image image-fluid ">
-                   </div><!--end of banner-column-->
-               </div><!--end of banner-row-->
-            </div><!--end of banner-container-->
-        </section>
+            <div class="container-fluid banner-container"> 
+                <div class="row banner-row align-items-center justify-content-center">
+                     <div class="col-6 col-sm-2 order-1 order-sm-0 headshot-div d-flex align-items-center justify-content-center ">
+                         <img src="css/media/headshot.png" alt="Lorraine Partridge headshot" id="headshot" class="img-fluid headshot">
+                     </div>
+                     <div class="col-6 col-sm-5 order-2 order sm-1 d-flex justify-content-center"> 
+                        <h2 class="myName">Lorraine Hall Partridge</h2>
+                    </div>
+                    <div class="crow-div col-12 col-sm-4 order-0 order-sm-2 image-div d-none d-sm-flex align-items-center justify-content-center justify-content-md-end">
+                        <img src="css/media/crow and pitcher reverse.PNG" alt="crow and pitcher" class="crow-image img-fluid ">
+                    </div><!--end of banner-column-->
+                </div><!--end of banner-row-->
+             </div><!--end of banner-container-->
+         </section>
 
         <section class="projects-section" id="projects">
             <div class="container-fluid projects-container">
@@ -85,26 +85,32 @@
                         <a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link" target="_blank">
                             <img src="css/media/restaurant_screen_shot.PNG" alt="screen shot of the Restaurant project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The most recent class project involved creating a responsive design for a restaurant landing page and about page.  I used Bootstrap for the layout, with the assets coming from the model page.</figcaption>
+                        <a href="https://github.com/lhpartridge/Restaurant" class="nav-link project-link github-link text-center" target="_blank">Click to view code on Github&nbsp&#187</a>
                     </figure>
                     <figure class="project-div" id="project2">
                         <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link" target="_blank"><img src="css/media/venedor_screen_shot.PNG" alt="screen shot of the Venedor project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The Venedor project evolved from creating a landing page based on a static image to one that included functionality features for currency, language, and cart totals, a carousel and cards for individual items with discount and price overlays.</figcaption>
+                        <a href="https://github.com/lhpartridge/Venedor" class="nav-link project-link github-link text-center" target="_blank">Click to view code on Github&nbsp&#187</a>
                     </figure>
                     <figure class="project-div" id="project3">
                         <a href="https://github.com/lhpartridge/graphicsUmbrella" class="nav-link project-link" target="_blank"><img src="css/media/graphics_umbrella_screen_shot.PNG" alt="screen shot of the GraphicsUmbrella project" class="figure-img img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">Another project based on creating a landing page from a static image, the GraphicsUmbrella page includes a banner mockup of a carousel, three content sections with text, cards and images, and a four-column footer with a footer navbar.  the assets were clipped from the model page.</figcaption>
+                        <figcaption class="text figcaption-text">The GraphicsUmbrella page includes a banner mockup of a carousel, three content sections with text, cards and images, and a four-column footer with a footer navbar.  The assets were clipped from the model page.</figcaption>
+                        <a href="https://github.com/lhpartridge/graphicsUmbrella" class="nav-link project-link github-link text-center" target="_blank">Click to view code on Github&nbsp&#187</a>
                     </figure>
                     <figure class="project-div" id="project4">
                         <a href="https://github.com/lhpartridge/Detroix-boot" class="nav-link project-link" target="_blank"><img src="css/media/detroix_screen_shot.PNG" alt="screen shot of the Detroix project" class="figure-img img-fluid project-image" /></a>
                         <figcaption class="text figcaption-text">The Detroix project was the transition point between using the layout methods of margin-padding-float, position, and flexbox before introducing Bootstrap.  This is the Bootstap version of the landing page.</figcaption>
+                        <a href="https://github.com/lhpartridge/Detroix-boot" class="nav-link project-link github-link align-bottom text-center" target="_blank">Click to view code on Github&nbsp&#187</a>
                     </figure>
                     <figure class="project-div" id="project">
                         <a href="https://github.com/lhpartridge/Aditii" class="nav-link project-link" target="_blank"><img src="css/media/aditii_screen_shot.PNG" alt="screen shot of the Aditii project" class="figure-img img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">My second major project developed a landing page for a shopping site using basic CSS layout philosophies introducing the HTML elements that support interactivity.  The page header includes a logo, a search bar and a navigation bar.  The main page sections include a banner, two featured products sections, with images, links, and buttons for purchases.  The footer has four lists with links for the store's departments.</figcaption>
+                        <figcaption class="text figcaption-text">The second major project developed a landing page for a shopping site using basic CSS layout philosophies introducing the HTML elements that support interactivity.  The page header includes a logo, a search bar and a navigation bar.  The main page sections include a banner, two featured products sections, with images, links, and buttons for purchases.  The footer has four lists with links for the store's departments.</figcaption>
+                        <a href="https://github.com/lhpartridge/Aditii" class="nav-link project-link github-link text-center" target="_blank">Click to view code on Github&nbsp&#187</a>
                     </figure>
                     <figure class="project-div" id="project">
                         <a href="https://github.com/lhpartridge/Bloom" class="nav-link project-link" target="_blank"><img src="css/media/bloom_screen_shot.PNG" alt="screen shot of the Bloom Landing Page project" class="figure-img img-fluid project-image" /></a>
-                        <figcaption class="text figcaption-text">The Bloom Landing Page was the first major class project. I built the page three ways using the CSS design philosophies of margin-padding-float, position, and flex-box.  The HTML includes a wrapper labeled inner to contain the elements in the layout.  Basic techniques include color matching, image cropping and font selection along with using gradients, lists and buttons.   </figcaption>
+                        <figcaption class="text figcaption-text">The Bloom Landing Page was the first major class project. I built the page three ways using the CSS design philosophies of margin-padding-float, position, and flex-box.  The HTML includes a wrapper labeled inner to contain the elements in the layout.  Basic techniques include color matching, image cropping and font selection along with using gradients, lists and buttons.</figcaption>
+                        <a href="https://github.com/lhpartridge/Bloom" class="nav-link project-link github-link text-center" target="_blank">Click to view code on Github&nbsp&#187</a>
                     </figure><!--end of projects-div-->
                 <!--end of projects column-->
                 </div><!--end of projects row-->
@@ -121,6 +127,7 @@
                 <div class="row colophon-row justify-content-md-center d-inline">
                     <div class="col-11 colophon d-flex justify-content-center align-items-center">
                         <h1 class=" subheader footer-subheader" id="footer-logo">apologicode</h1>  
+                        <img src="css/media/crow_silhouette_2_small.PNG" alt="" class="crow-icon">
                         <p class="text colophon-text">&copy2021  All rights reserved.</p>
                     </div>
                 </div><!--end of colophon-row-->

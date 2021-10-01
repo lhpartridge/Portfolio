@@ -103,7 +103,7 @@ h3 {
 .logo-subheader {
     font-family: var(--headerFont);
     color: var(--sectionColor);
-    font-size: calc(48px + ( 64 - 48) * (100vw - 300px) / (800 - 300) );
+    font-size: calc(36px + ( 60 - 36) * (100vw - 300px) / (800 - 300) );
 }
 
  .logo {
@@ -136,7 +136,7 @@ h3 {
     background-color: var(--bannerColor);
     color: var(--bgColor);
     font-family: var(--headerFont);
-    font-size: calc(12px + ( 18 - 12) * (100vw - 300px) / (800 - 300) );
+    font-size: calc(10px + ( 16 - 10) * (100vw - 300px) / (800 - 300) );
 }
 /*
 
@@ -310,6 +310,14 @@ p {
     padding:  0px;
 }
 
+.github-link {
+    font-family: var(--textFont);
+}
+
+.github-link:hover {
+    color: var(--waterColor);
+}
+
 figure {
     border: thin var(--bannerColor) solid;
     padding: 10px 0;
@@ -335,12 +343,12 @@ figcaption {
     font-size: calc(14px + (18 - 14) * (100vw - 300px) / (800 - 300) );
 }
 
-.certifications-section {
+.credentials-section {
     background-color: var(--imageBg);
     padding-top: 20px;
 }
 
-.certifications-text {
+.credentials-text {
     font-family: var(--textFont);
     font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
     font-weight: 500;
@@ -348,11 +356,11 @@ figcaption {
     background-color: transparent;
 }
 
-#web-design {
+#web-design, #resume {
     text-decoration: none;
 }
 
-#rwd:hover {
+.credentials-text:hover {
     color: var(--waterColor);
 }
 
@@ -411,7 +419,7 @@ footer {
 }
 
 .footer-subheader {
-    font-size: 48px;
+    font-size: calc(32px + (48 - 32) * (100vw - 300px) / (800 - 300) );
     color: var(--textColor);
     margin: 0;
     padding: 0;
@@ -421,10 +429,15 @@ footer {
     background-color: transparent;
 }
 
+.crow-icon {
+    border-radius: 50%;
+    opacity: 80%;
+}
+
 .colophon-text {
     background-color: transparent;
     font-family: var(--textFont);
-    font-size: 18px;
+    font-size: calc(12px + (18 - 12) * (100vw - 300px) / (800 - 300) );
     margin: 5px 0 0 0;
     padding: 0;
 }
@@ -432,3 +445,8 @@ footer {
 .dedication {
     background-color: #e4e7f4;
 }
+
+.carousel-subheader {
+    line-height: 2;
+}
+
