@@ -19,16 +19,23 @@
 <body>
     <header class="header" id="home">
         <section class="top-header-section">
-            <div class="container main-header-container">
-                <div class="row header-row justify-content-start">
-                            <div class="logo col-7 col-md-6 d-flex align-items-center"> 
-                                <h1 class="subheader logo-subheader" id="apologue">apologue</h1>
-                                <h1 class=" subheader logo-subheader" id="apologicode">apologicode</h1>   
-                            </div>
-                            <div class="slogan col-7 col-md-6 d-flex align-items-center"> 
-                                <p class="text logo-text" id="logo-text-1">a moral fable, especially one with animals</p>
-                                <p class="text logo-text" id="logo-text-2">unique challenges inspire creative solutions</p>
-                            </div>
+            <div class="container-fluid main-header-container">
+                <div class="row header-row">
+                    <div class="logo col-sm-10 col-md-5 d-flex align-items-center justify-content-end"> 
+                        <h1 class="subheader logo-subheader" id="apologue">apologue</h1>
+                        <h1 class=" subheader logo-subheader" id="apologicode">apologicode</h1>     
+                        <div class="logo-image align-items-center d-flex d-sm-none">
+                            <img src="css/media/crow_silhouette_2_small.PNG" alt="crow icon" class="crow-icon">
+                        </div>
+                    </div>
+                    <div class=" col-2 logo-image align-items-center justify-content-center justify-content-sm-start justify-content-md-center d-none d-sm-flex">
+                        <img src="css/media/crow_silhouette_2_small.PNG" alt="crow-icon" class="crow-icon">
+                    </div>
+
+                    <div class="slogan col-sm-7 col-md-5 d-flex align-items-center"> 
+                        <p class="text logo-text" id="logo-text-1">a moral fable, especially one with animals</p>
+                        <p class="text logo-text" id="logo-text-2">unique challenges inspire creative solutions</p>
+                    </div>                    
                 </div><!--end of main header row-->
             </div><!--end of main header container-->
         </section><!--end of main header section-->
@@ -60,7 +67,7 @@
            <div class="container-fluid banner-container"> 
                <div class="row banner-row align-items-center justify-content-center">
                     <div class="col-6 col-sm-2 order-1 order-sm-0 headshot-div d-flex align-items-center justify-content-center ">
-                        <img src="css/media/headshot.png" alt="Lorraine Partridge headshot" id="headshot" class="img-fluid headshot">
+                        <img src="css/media/lhp-msca-headshot-2.jpeg" alt="Lorraine Partridge headshot" id="headshot" class="img-fluid headshot">
                     </div>
                     <div class="col-6 col-sm-5 order-2 order sm-1 d-flex justify-content-center"> 
                        <h2 class="myName">Lorraine Hall Partridge</h2>
@@ -75,13 +82,10 @@
         <section class="about-section" id="about">
             <div class="container-fluid about-container">
                 <div class="row about-row justify-content-center">
-                    <!--<div class="div col-sm-4 col-md-3 headshot-div d-flex justify-content-center">
-                        <img src="css/media/headshot.png" alt="Lorraine Partridge" id="headshot">
-                    </div>-->
                     <div class="text-div col-11">
-                        <p class="text about-text about-text-1">I'm a junior developer on the next part of my life's path, making a full circle from my beginnings as a NASA intern in the Data Processing Center of the Johnson Space Center.  On the way, I've been a roadie, worked in a truck stop, and learned French.  I spent three decades changing the world one person at a time in the inner city, bringing the world to my students and empowering them to seek their own horizons. </p>
+                        <p class="text about-text about-text-1">I'm a junior developer at the Mississippi Coding Academy in Jackson, Mississippi, on the next part of my life's path making a full circle from my beginnings as a NASA intern in the Data Processing Center of the Johnson Space Center.  On the way, I've been a roadie, worked in a truck stop, and learned French.  I spent three decades changing the world one person at a time in the inner city, bringing the world to my students and empowering them to seek their own horizons. </p>
                         <p class="text about-text about-text-2">I'm moving on now, empowering my clients to overcome the challenges on their own paths. </p>
-                        <p class="text about-text about-text-3">Contact me and we'll seek a unique solution to your challenge. </p>
+                        <a href="#contacts" class="nav-link contacts-link"><p class="text about-text about-text-3">Contact me and we'll seek a unique solution to your challenge. </p></a>
                     </div><!--end of text-div-->
                 </div><!--end of about-row-->
                 <div class="row more-row justify-content-center justify-content-md-around">
@@ -129,7 +133,7 @@
             </div><!--end of projects container-->
         </section><!--end of projects section-->
 
-        <section class="credentials-section" id="credentials"><!--end of credentials section-->
+        <section class="credentials-section" id="credentials">
             <div class="container-fluid credentials-container">
                 <div class="row credentials-subheader-row justify-content-center justify-content-md-around">
                     <div class="col-8 credentials-subheader justify-content-start">
@@ -148,7 +152,7 @@
                     </div>
                 </div><!--end of credentials row-->
             </div><!--end of credentials container-->
-        </section>
+        </section><!--end of credentials section-->
 
         <section class="interests-section" id="interests">
             <div class="container-fluid interests-container">
@@ -211,7 +215,7 @@
                 <div class="row colophon-row justify-content-md-center d-inline">
                     <div class="col col-sm-11 colophon d-md-flex justify-content-center align-items-center">
                         <h1 class=" subheader footer-subheader d-flex justify-content-center" id="footer-logo">apologicode&nbsp</h1>  
-                        <img src="css/media/crow_silhouette_2_small.PNG" alt="" class="crow-icon">
+                        <img src="css/media/crow_silhouette_2_small.PNG" alt="crow icon" class="crow-icon">
                         <p class="text colophon-text d-flex justify-content-center">&nbsp&nbsp&copy2021  All rights reserved.</p>
                     </div>
                 </div><!--end of colophon-row-->
@@ -223,8 +227,6 @@ add sr-only classes to links, etc.
 add alt text for photos
 make responsive
     center logo and logo text on small devices
-add photos for interests
-update LinkedIn profile with certificate and add link to contacts
 add transitions and scroll styling
 possibly use a float for the top/more links; bootstrap has a clearfix class-->
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

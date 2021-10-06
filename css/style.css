@@ -38,6 +38,7 @@ body {
     background-color: var(--imageBg);
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 #title {
@@ -48,11 +49,7 @@ h3 {
     color: var(--sectionColor);
     font-size: 48px;
 }
-/*
-.main-header-section {
-    background-color: var(--bgColor);
-}
-*/
+
 
 .top-header-section {
       background-color: #737687;
@@ -77,10 +74,12 @@ h3 {
 
 .nav-link:hover {
     color: var(--pebbleColor);
+    transition: 0.5s ease;
 }
 
 .about-link:hover {
     color: var(--waterColor);
+    transition: 0.5s ease;
 }
 
 .top, .more {
@@ -93,6 +92,7 @@ h3 {
 .top:hover, more:hover  {
     color: var(--waterColor);
     text-decoration: none;
+    transition: 0.5s ease;
 }
 
 .logo-section {
@@ -138,12 +138,6 @@ h3 {
     font-family: var(--headerFont);
     font-size: calc(10px + ( 16 - 10) * (100vw - 300px) / (800 - 300) );
 }
-/*
-
-.logo-text:hover {
-    color: #f4f1c0;
-}
-*/
 
 .slogan {
     position: relative;
@@ -268,6 +262,12 @@ h3 {
     padding-top: 20px;
 }
 
+.about-text-3:hover {
+    font-size: 24px;
+    color: var(--waterColor);
+    transition: 0.5s ease;
+}
+
 h1 {
     font-family: var(--headerFont);
     color: var(--textColor);
@@ -316,6 +316,7 @@ p {
 
 .github-link:hover {
     color: var(--waterColor);
+    transition: 0.5s ease;
 }
 
 figure {
@@ -335,7 +336,6 @@ figcaption {
 .project-image {
     /*max-width: 450px;*/
     padding: 10px;
-    
 }
 
 .figcaption-text {
@@ -362,16 +362,18 @@ figcaption {
 
 .credentials-text:hover {
     color: var(--waterColor);
+    transition: 0.5s ease;
 }
 
 .interests-section {
     background-color: var(--pebbleColor);
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
-.interests-text {
+.carousel-text {
     background-color: transparent;
     padding: 0 3px;
+    height: auto;
 }
 
 .contacts-section {
@@ -381,6 +383,7 @@ figcaption {
 
 .contacts-section .top:hover {
     color: var(--pebbleColor);
+    transition: 0.5s ease;
 }
 
 .contacts-text {
@@ -405,11 +408,25 @@ figcaption {
 
 a .contacts-text:hover {
     color: var(--pebbleColor);
+    transition: 0.5s ease;
 }
 
 #phone, #mail {
     text-decoration: underline;
     text-decoration-thickness: 1px;
+}
+
+.fable-text {
+    font-family: var(--textFont);
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
+    color: var(--textColor);
+    background-color: transparent;
+}
+
+.video-section {
+    height: auto;
+    background-color: #f1c180;
+    padding: 20px 10px;
 }
 
 footer {
@@ -449,4 +466,5 @@ footer {
 .carousel-subheader {
     line-height: 2;
 }
+
 
