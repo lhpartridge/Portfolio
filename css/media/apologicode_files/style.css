@@ -1,9 +1,3 @@
-/*Lorraine Hall Partridge Developer Portfolio Project for the Mississippi Coding Acaemies 2021*/
-
-/*The color scheme for this project came from the image of the Crow and the Pitcher selected using Photopea.  
-The fonts came from Google Fonts.
-The icons came from Icomoon.*/
-
 :root {
     --imageBg: #fefefe;
     --bgColor: #e4e8ff;
@@ -40,29 +34,16 @@ font-family: 'Fredericka the Great', cursive;
 >font-family: 'Gowun Batang', serif;
 font-family: 'Julius Sans One', sans-serif;
 */
-
-/*generic rules*/
 body {
     background-color: var(--imageBg);
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    border: 1px solid skyblue;
 }
 
 #title {
     font-family:  var(--headerFont);
-}
-
-h1 {
-    font-family: var(--headerFont);
-    color: var(--textColor);
-}
-
-h2 {
-    font-family: var(--subheaderFont);
-    font-size: calc(18px + (26 - 18) * (100vw - 300px) / (800 - 300) );
-    color: var(--textColor);
-    font-weight: 600;
 }
 
 h3 {
@@ -70,19 +51,9 @@ h3 {
     font-size: 48px;
 }
 
-section {
-    padding: 20px 0;
-    height: auto;
+.header-row {
+    border: 1px solid fuchsia;
 }
-
-p {
-    font: 1em sans-serif;
-    color: #1b2231;
-}
-
-/*end generic rules*/
-
-/*header*/
 
 .top-header-section {
       background-color: #737687;
@@ -247,16 +218,10 @@ p {
     }
 }
 
-/*banner section*/
+
 .banner-section {
     background: linear-gradient(to right, var(--bgColor), var(--imageBg));
     padding-top: 20px;
-}
-
-.banner {
-    height:  400px;
-    background-image: linear-gradient(to top right, #1b2231, #737687);
-    
 }
 
 .headshot {
@@ -265,6 +230,7 @@ p {
 
 .crow-div {
     padding: 0;
+    border: 1px solid blue;
 }
 
 .crow-image {
@@ -294,12 +260,12 @@ p {
     padding:  10px;
 }
 
-/*about section*/
 .about-text, .interests-text, .contacts-text, .figcaption-text {
     font-family: var(--textFont);
     font-size: 20px;
     background-color: transparent;
     padding-top: 20px;
+    border: 1px solid orange;
 }
 
 .about-text-3:hover {
@@ -308,22 +274,36 @@ p {
     transition: 0.5s ease;
 }
 
-/*fable and video for the about me page*/
-.fable-text, .bio-text {
-    font-family: var(--textFont);
-    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
+h1 {
+    font-family: var(--headerFont);
     color: var(--textColor);
-    background-color: transparent;
 }
 
-.video-section {
+h2 {
+    font-family: var(--subheaderFont);
+    font-size: calc(18px + (26 - 18) * (100vw - 300px) / (800 - 300) );
+    color: var(--textColor);
+    font-weight: 600;
+    border: 1px solid purple;
+}
+
+.banner {
+    height:  400px;
+    background-image: linear-gradient(to top right, #1b2231, #737687);
+    
+}
+*/
+section {
+    padding: 20px 0;
     height: auto;
-    background-color: #f1c180;
-    padding: 20px 10px;
 }
 
-/*projects section for home and projects page*/
- 
+p {
+    font: 1em sans-serif;
+    color: #1b2231;
+    background-color: #e4e7f4;
+}
+
 .projects-section, .bio-section {
     background-color: var(--bgColor);
     padding: 20px 0;
@@ -335,6 +315,15 @@ p {
 
 .project-div, .project-link {
     padding:  0px;
+}
+
+.github-link {
+    font-family: var(--textFont);
+}
+
+.github-link:hover {
+    color: var(--waterColor);
+    transition: 0.5s ease;
 }
 
 figure {
@@ -361,8 +350,6 @@ figcaption {
     font-size: calc(14px + (18 - 14) * (100vw - 300px) / (800 - 300) );
 }
 
-/*credentials section*/
-
 .credentials-section {
     background-color: var(--imageBg);
     padding-top: 20px;
@@ -385,15 +372,13 @@ figcaption {
     transition: 0.5s ease;
 }
 
-/*interests section for home and about page*/
-
 .interests-section {
     background-color: var(--pebbleColor);
     padding: 20px 0;
 }
 
-.carousel-subheader {
-    line-height: 2;
+.carousel-row {
+    border: 1px solid blue;
 }
 
 .carousel-text {
@@ -401,8 +386,6 @@ figcaption {
     padding: 0 3px;
     height: auto;
 }
-
-/*contacts section*/
 
 .contacts-section {
     background-color: var(--waterColor);
@@ -434,7 +417,7 @@ figcaption {
     padding-top: 20px;
 }
 
-.contacts-text:hover {
+a .contacts-text:hover {
     color: var(--pebbleColor);
     transition: 0.5s ease;
 }
@@ -444,7 +427,20 @@ figcaption {
     text-decoration-thickness: 1px;
 }
 
-/*footer*/
+.fable-text, .bio-text {
+    font-family: var(--textFont);
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
+    color: var(--textColor);
+    background-color: transparent;
+    border: 1px solid red;
+}
+
+.video-section {
+    height: auto;
+    background-color: #f1c180;
+    padding: 20px 10px;
+    border: 1px solid green;
+}
 
 footer {
     background: linear-gradient(var(--waterColor), #737687);
@@ -468,12 +464,9 @@ footer {
     opacity: 80%;
 }
 
-/*the media query is to control the display of the crow icon on small devices*/
-
-@media (max-width: 767px) {
+@media (max-width: 766px) {
     .crow-icon {
-        display: block;
-        margin: 0 auto;
+        justify-content: center;
     }
 }
 
@@ -485,7 +478,12 @@ footer {
     padding: 0;
 }
 
-
-#contacts-div {
-    color: pink;
+.dedication {
+    background-color: #e4e7f4;
 }
+
+.carousel-subheader {
+    line-height: 2;
+}
+
+
