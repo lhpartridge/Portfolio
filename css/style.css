@@ -100,7 +100,7 @@ p {
 
 .nav-link {
     color: var(--textColor);
-    font-size: calc(8px + ( 14 - 8) * (100vw - 300px) / (800 - 300) ); 
+    font-size: calc(10px + ( 16 - 10) * (100vw - 300px) / (800 - 300) ); 
     font-family: var(--subheaderFont);
     font-weight: 700;
 }
@@ -295,23 +295,27 @@ p {
 }
 
 /*about section*/
+
+/*
 .about-text, .interests-text, .contacts-text, .figcaption-text {
     font-family: var(--textFont);
     font-size: 20px;
     background-color: transparent;
     padding-top: 20px;
 }
+*/
 
 .about-text-3:hover {
-    font-size: 24px;
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
     color: var(--waterColor);
     transition: 0.5s ease;
 }
 
 /*fable and video for the about me page*/
-.fable-text, .bio-text {
+.fable-text, .bio-text, .about-text, .interests-text, .contacts-text, .figcaption-text, .credentials-text {
     font-family: var(--textFont);
     font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
+    font-weight: 500;
     color: var(--textColor);
     background-color: transparent;
 }
@@ -358,7 +362,6 @@ figcaption {
 
 .figcaption-text {
     background-color: var(--imageBg);
-    font-size: calc(14px + (18 - 14) * (100vw - 300px) / (800 - 300) );
 }
 
 /*credentials section*/
@@ -369,11 +372,7 @@ figcaption {
 }
 
 .credentials-text {
-    font-family: var(--textFont);
-    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
-    font-weight: 500;
     text-transform: capitalize;
-    background-color: transparent;
 }
 
 #web-design, #resume {
@@ -415,9 +414,6 @@ figcaption {
 }
 
 .contacts-text {
-    background-color: transparent;
-    font-size:  20px;
-    font-weight:  500;
     padding: 0;
 }
 
@@ -428,7 +424,7 @@ figcaption {
 
 .address {
     font-family: var(--textFont);
-    font-size: 20px;
+    font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
     color: var(--textColor);
     background-color: transparent;
     padding-top: 20px;
@@ -483,9 +479,4 @@ footer {
     font-size: calc(12px + (18 - 12) * (100vw - 300px) / (800 - 300) );
     margin: 5px 0 0 0;
     padding: 0;
-}
-
-
-#contacts-div {
-    color: pink;
 }
