@@ -183,7 +183,7 @@ p {
 #logo-text-1 {
     position: absolute;
     left: 4vw;
-    opacity: 0%;
+    transition: opacity 10s ease-in-out;
     animation-direction: normal;
     animation-name: fadeOut;
     animation-duration: 10s;
@@ -195,6 +195,7 @@ p {
     left: 4vw;
     animation-name: fadeIn;
     animation-duration: 10s;
+    transition: opacity 10s ease-in-out;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
