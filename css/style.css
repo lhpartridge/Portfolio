@@ -152,6 +152,8 @@ p {
     animation-direction: normal;
     animation-name: fadeOut;
     animation-duration: 10s;
+    /*animation-delay: 10s;*/
+    transition: opacity 10s ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -161,6 +163,7 @@ p {
     left: 4vw;
     animation-name: fadeIn;
     animation-duration: 10s;
+    transition: opacity 10s ease-in-out;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
@@ -224,6 +227,7 @@ p {
 
 
 @keyframes fadeIn {
+    /*
     0% {
         opacity: 25%;
     }
@@ -245,7 +249,25 @@ p {
     100% {
         opacity: 25%;
     }
+    */
+
+    0% {
+        opacity: 100%;
+        
+    }
+
+    50% {
+        opacity: 0%;
+
+    }
+
+    100% {
+        opacity: 100%;
+    
+    }
 }
+
+
 
 /*banner section*/
 .banner-section {
