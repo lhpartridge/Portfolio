@@ -364,16 +364,11 @@ p {
     padding:  0px;
 }
 
-.figure-column {
-    border: 1px solid green;
-}
-
 figure {
     border: thin var(--bannerColor) solid;
     padding: 10px 0;
     max-width: 450px;
     background-color: var(--pebbleColor);
-    border: 1px solid red;
 }
 
 figcaption {
