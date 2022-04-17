@@ -59,6 +59,7 @@ h1 {
 }
 
 h2 {
+    padding-top: 10px;
     font-family: var(--subheaderFont);
     font-size: calc(18px + (26 - 18) * (100vw - 300px) / (800 - 300) );
     color: var(--textColor);
@@ -66,7 +67,8 @@ h2 {
 }
 
 h3 {
-    color: var(--sectionColor);
+    font-family: var(--textFont);
+    color: var(--textColor);
     font-size: 48px;
 }
 
@@ -361,10 +363,12 @@ p {
 }
 
 .project-div, .project-link {
-    padding:  0px;
+    margin: 0;
+    padding:  10px;
 }
 
 figure {
+    margin: 0 auto;
     border: thin var(--bannerColor) solid;
     padding: 10px 0;
     max-width: 450px;
@@ -372,8 +376,10 @@ figure {
 }
 
 figcaption {
-    max-width: 450px;
-    padding: 0 10px;
+    margin: 0 auto;
+    /* max-width: 450px; */
+    width: 90%;
+    padding: 10px;
     border: 2px var(--bannerColor);
     margin: 10px;
 }
