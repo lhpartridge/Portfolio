@@ -82,6 +82,10 @@ p {
     color: #1b2231;
 }
 
+.bold {
+    font-weight: 800;
+}
+
 /*end generic rules*/
 
 /*header*/
@@ -337,7 +341,7 @@ p {
 }
 
 /*fable and video for the about me page*/
-.fable-text, .bio-text, .about-text, .interests-text, .contacts-text, .figcaption-text, .credentials-text {
+.fable-text, .bio-text, .about-text, .interests-text, .contacts-text, .figcaption-text, .credentials-text, .future-text {
     font-family: var(--textFont);
     font-size: calc(16px + (20 - 16) * (100vw - 300px) / (800 - 300) );
     font-weight: 500;
@@ -345,12 +349,35 @@ p {
     background-color: transparent;
 }
 
-.video-section {
-    height: auto;
-    background-color: #f1c180;
-    padding: 20px 10px;
+.text-link {
+    color: var(--waterColor)
 }
 
+.text-link:hover {
+    color: var(--bannerColor)
+}
+
+.video-section {
+    height: auto;
+    padding: 30px 10px;
+    background-color: #f1c180;
+}
+
+.fable {
+    padding: 40px;
+    background-color: var(--imageBg);
+    border-radius: 20px;
+}
+
+.future-section {
+    padding: 30px 10px;
+    height: auto;
+    background-color: var(--bgColor);
+}
+
+iframe {
+    padding-top: 40px;
+}
 /*projects section for home and projects page*/
  
 .projects-section, .bio-section {
@@ -420,7 +447,7 @@ figcaption {
     padding: 20px 0;
 }
 
-.carousel-subheader {
+.carousel-subheader, .fable-subheader, .future-subheader {
     line-height: 2;
 }
 
